@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #0f4c75;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+/* HERO */
+.hero {
+    background: url('https://images.pexels.com/photos/2916820/pexels-photo-2916820.jpeg?cs=srgb&dl=pexels-andre-furtado-43594-2916820.jpg&fm=jpg') no-repeat center/cover;
+    color: white;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    background: #3282b8;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+/* FEATURES */
+.features {
+    padding: 2rem;
+    text-align: center;
+}
+
+.feature-boxes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.feature {
+    padding: 1rem;
+    background: #e8f1f2;
+    flex: 1;
+}
+
+/* DESTINATIONS */
+.destinations {
+    padding: 2rem;
+    text-align: center;
+}
+
+.destination-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CONTACT */
+.contact {
+    padding: 2rem;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+button {
+    background: #0f4c75;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0f4c75;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #0f4c75;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .feature-boxes,
+    .destination-cards {
+        flex-direction: column;
+        display: flex;
+    }
+}
