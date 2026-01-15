@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="container">
+  <h2>Create Account</h2>
+
+  <form id="signupForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <input type="text" id="city" placeholder="City" required>
+
+    <div class="password-box">
+      <input type="password" id="password" placeholder="Password" required>
+      <span onclick="togglePassword('password')">👁</span>
+    </div>
+
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+    <p class="error" id="signupError"></p>
+
+    <button type="submit">Signup</button>
+  </form>
+
+  <p>Already have an account?
+    <a href="SignIn.html">Sign In</a>
+  </p>
+</main>
+
+<script src="js/index.js"></script>
+</body>
+</html>
